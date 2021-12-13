@@ -1,5 +1,8 @@
 public class Blockchain {
     public static void main(String[] args){
+
+        //calculated and showed new hashes
+
         Block firstBlock = new Block("First block", "0");
         System.out.println("Hash for block 1: " + firstBlock.hash);
 
