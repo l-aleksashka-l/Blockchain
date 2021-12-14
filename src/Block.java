@@ -11,6 +11,7 @@ public class Block {
         return calculatedHash;
     }
 
+
     public Block(String data, String previousHash){
         this.data = data;
         this.previousHash = previousHash;
