@@ -23,7 +23,7 @@ public class Blockchain {
         walletB = new Wallet();
         Wallet coinbase = new Wallet();
 
-        //create genesis transaction, which sends 100 NoobCoin to walletA:
+        //create genesis transaction, which sends 100 Coin to walletA:
         genesisTransaction = new Transaction(coinbase.publicKey, walletA.publicKey, 100f, null);
         genesisTransaction.generateSignature(coinbase.privateKey);	 //manually sign the genesis transaction
         genesisTransaction.transactionId = "0"; //manually set the transaction id
@@ -141,7 +141,7 @@ public class Blockchain {
     }
 
     public static void addBlock(Block newBlock) {
-        newBlock.mineBlock(difficulty);
+         newBlock.mineBlock(difficulty);
         blockchain.add(newBlock);
     }
 }
